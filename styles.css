@@ -1,0 +1,21 @@
+.container{
+    border: 1px solid #abc;
+    /* border-radius: .5rem; */
+    height: 60vh;
+    width: 60vw;
+    margin: 0 auto;
+}
+.inner-div{
+    border: 1px solid #afc;
+    /* border-radius: .25rem; */
+    min-height: 5.93%;
+    min-width: 5%; 
+    transition: 0s 180s; /* helps make hover stay
+    /* visibility: hidden; */
+}
+
+.inner-div:hover{
+    background-color: aqua;
+    visibility: visible;
+    transition: 0.5s; /* helps make hover stay*/
+}
