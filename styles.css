@@ -17,5 +17,5 @@
 .inner-div:hover{
     background-color: aqua;
     visibility: visible;
-    transition: 0.5s; /* helps make hover stay*/
+    transition: 0.2s; /* helps make hover stay*/
 }
