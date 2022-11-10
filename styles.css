@@ -1,21 +1,36 @@
+html{
+    text-align: center;
+}
 .container{
     border: 1px solid #abc;
     /* border-radius: .5rem; */
-    height: 60vh;
-    width: 60vw;
-    margin: 0 auto;
+    min-height: 60vh;
+    min-width: 60vw;
+    /* margin: 0 auto; */
 }
 .inner-div{
     border: 1px solid #afc;
     /* border-radius: .25rem; */
-    min-height: 5.93%;
-    min-width: 5%; 
+    min-height: 1.93%;
+    min-width: 1%; 
     transition: 0s 180s; /* helps make hover stay
     /* visibility: hidden; */
+    border-radius: .5rem;
 }
 
 .inner-div:hover{
     background-color: aqua;
     visibility: visible;
-    transition: 0.2s; /* helps make hover stay*/
+    transition: 0.1s; /* helps make hover stay*/
+
+}
+section{
+    display: flex;
+    justify-content: center;
+}
+form{
+    align-self: center;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
 }
