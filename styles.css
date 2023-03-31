@@ -10,13 +10,13 @@ body{
     background-color: beige;
 }
 .inner-div{
-    border: 1px solid #afc;
+    /* border: 1px solid #afc; */
     /* border-radius: .25rem; */
     min-height: 1.93%;
-    min-width: 1%; 
+    min-width: 1.93%; 
     transition: 0s 180s; /* helps make hover stay
     /* visibility: hidden; */
-    border-radius: .5rem;
+    border-radius: .1rem;
 }
 
 .inner-div:hover{
@@ -39,7 +39,7 @@ section{
     max-width:60% ;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid #abc;
+    border: 4px solid rgb(3, 13, 26);
     min-height: 60vh;
     min-width: 60vw;
     background-color: white;

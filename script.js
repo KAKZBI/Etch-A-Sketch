@@ -7,18 +7,23 @@ container.style.gridTemplateColumns= 'repeat(16, 1fr)';
 // container.style.alignItems= 'center';
 // container.style.justifyContent= 'center';
 
+
 let actualColor = document.querySelector('#color-picker').value;
 window.addEventListener('load', initializeGridContainer);
-let black = document.querySelector('.black');
-black.addEventListener('click', ()=>changeHoverColor());
+let black = document.querySelector('.black'); // black button
+black.addEventListener('click', ()=>changeHoverColor());// Change hover color to black
 let eraser = document.querySelector('.eraser');
-eraser.addEventListener('click', ()=>changeHoverColor('white'));
+eraser.addEventListener('click', ()=>changeHoverColor('white'));// Erase hover color
 document.querySelector('#color-picker').addEventListener('input', ()=>{
     actualColor = document.querySelector('#color-picker').value;
     changeHoverColor(actualColor);
 });
+const gridConstructor =document.querySelector('#gridNumber');
+
+gridConstructor.addEventListener('change', changeGridSize);
+
 let clear = document.querySelector('.clear');
-clear.addEventListener('click', ()=>{
+clear.addEventListener('click', ()=>{ //Remove all hover colors
     let inner_divs = document.querySelectorAll('.inner-div');
     inner_divs.forEach(inner_div => {
         inner_div.style.transition = '0s 0s';
@@ -56,13 +61,9 @@ function changeHoverColor(color='black'){
     }))
 }
 
-const gridConstructor =document.querySelector('#gridNumber');
 
-let inner_div = document.createElement('div') ;
 
-gridConstructor.addEventListener('change', changeGrid);
-
-function changeGrid() {
+function changeGridSize() {
     const value = document.querySelector('#gridNumber').value;
     container.innerHTML="";
     container.style.display= 'grid';
