@@ -14,14 +14,14 @@ body{
     /* border-radius: .25rem; */
     min-height: 1.93%;
     min-width: 1.93%; 
-    transition: 0s 180s; /* helps make hover stay
+    transition: 0s infinite; /* helps make hover stay
     /* visibility: hidden; */
     border-radius: .1rem;
 }
 
 .inner-div:hover{
     /* background-color: aqua; */
-    visibility: visible;
+    /* visibility: visible; */
     transition: 0.1s; /* helps make hover stay*/
 
 }
