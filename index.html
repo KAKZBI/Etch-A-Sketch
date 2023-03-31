@@ -6,19 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch A Sketch</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.css"/>
+<script src="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.js"></script> -->
     <script src="script.js" defer></script>
 </head>
 <body>
     <h1>Etch A Sketch</h1>
-    <section class="sketchpad">
-        <form class="form">
-            <label></label>
-            <input type="range" name="gridNumber" id="gridNumber" min="16" max="30">
-            <label></label>
-            <button type="reset" value>Reset</button>
-        </form>
-        <div class="container"></div>
-    </section>
+    <div class="settings">
+        <button class="black">Black</button>
+        <button class="rainbow">Rainbow</button>
+        <button class="eraser">Eraser</button>
+        <input type="color" id="color-picker" value="#111111">
+    </div>
+    <div class="container"></div>
+    <div class="settings">
+        <input type="range" name="gridNumber" id="gridNumber" min="16" max="30">
+        <button>Clear</button>
+    </div>
     
 </body>
 </html>
