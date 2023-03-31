@@ -17,6 +17,19 @@ document.querySelector('#color-picker').addEventListener('input', ()=>{
     actualColor = document.querySelector('#color-picker').value;
     changeHoverColor(actualColor);
 });
+let clear = document.querySelector('.clear');
+clear.addEventListener('click', ()=>{
+    let inner_divs = document.querySelectorAll('.inner-div');
+    inner_divs.forEach(inner_div => {
+        inner_div.style.transition = '0s 0s';
+        inner_div.style.backgroundColor = 'white';
+        
+
+        // console.log(inner_div.style.backgroundColor);
+    });
+        // initializeGridContainer();
+        
+    });
 
 
 function initializeGridContainer(){
