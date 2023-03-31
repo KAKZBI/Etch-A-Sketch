@@ -14,6 +14,16 @@ let black = document.querySelector('.black'); // black button
 black.addEventListener('click', ()=>changeHoverColor());// Change hover color to black
 let eraser = document.querySelector('.eraser');
 eraser.addEventListener('click', ()=>changeHoverColor('white'));// Erase hover color
+let rainbow = document.querySelector('.rainbow');
+rainbow.addEventListener('click', ()=>{
+    let inner_divs = document.querySelectorAll('.inner-div');
+    inner_divs.forEach(inner_div => inner_div.addEventListener('mouseover',()=>{
+        let r = Math.floor(Math.random()*256);
+        let g = Math.floor(Math.random()*256);
+        let b = Math.floor(Math.random()*256);
+        inner_div.style.backgroundColor = `rgb(${r},${g},${b})`;
+    }) );
+})
 document.querySelector('#color-picker').addEventListener('input', ()=>{
     actualColor = document.querySelector('#color-picker').value;
     changeHoverColor(actualColor);
