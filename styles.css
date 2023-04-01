@@ -9,6 +9,36 @@ body{
     gap: 1.5em;
     background-color: beige;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+input,button{
+    cursor:pointer;
+}
+main{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1.5em;
+    background-color: beige;
+}
+footer{
+    background-color: #1F2937;
+    color:#e5E7EB;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 0;
+    bottom: 0;
+    margin-top: 2rem;
+    min-height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .inner-div{
     /* border: 1px solid #afc; */
     /* border-radius: .25rem; */
