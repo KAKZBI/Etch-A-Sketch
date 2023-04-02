@@ -1,3 +1,7 @@
+@font-face {
+    font-family: holder_medium;
+    src: url(./fonts/holder/HolderBold_PERSONAL_USE_ONLY.otf);
+  }
 html{
     text-align: center;
 }
@@ -18,6 +22,14 @@ body{
 }
 input,button{
     cursor:pointer;
+    font-family:holder_medium, robotronica, lato, sans-serif;
+}
+button:hover{
+    transform: scale(1.2);
+    background-color: aquamarine;
+}
+input[type="color"]:hover{
+    transform: scale(1.2);
 }
 main{
     display:flex;
@@ -25,6 +37,8 @@ main{
     justify-content: space-evenly;
     gap: 1.5em;
     background-color: beige;
+    font-family:holder_medium, robotronica, lato, sans-serif;
+    /* font-family: holder_medium; */
 }
 footer{
     background-color: #1F2937;
